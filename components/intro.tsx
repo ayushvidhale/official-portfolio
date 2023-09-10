@@ -37,7 +37,7 @@ export default function Intro() {
               height="192"
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-32 w-32 rounded-full object-cover border-[0.15rem] border-gray-200 shadow-xl"
             />
           </motion.div>
 
@@ -64,9 +64,7 @@ export default function Intro() {
       >
         <span className="font-bold">Hello, I'm Ayush.</span> I'm a{" "}
         <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">3 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        <span className="font-bold">3 years</span> of experience. Creating <span className="font-bold"> interactive and dynamic </span>web solutions.
       </motion.h1>
 
       <motion.div

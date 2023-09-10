@@ -35,26 +35,26 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Founder & CEO",
+    location: "GatiKi.Club",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
+    "I'm the founder and CEO of GatiKi.Club, a platform to empower open-source projects with collaborative tools, issue tracking, and hiring.",
+    icon: React.createElement(CgWorkAlt),
     date: "2019",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "VIT'25 (B.Tech)",
+    location: "Pune, India",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "I'm currently pursuing my B.Tech in Information Technology from VIT'25, Pune.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2021 - 2025",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Freelance Full-Stack Developer",
+    location: "Remote",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I'm a freelance full-stack developer, working with clients from all over the world.",
     icon: React.createElement(FaReact),
     date: "2021 - present",
   },
@@ -64,21 +64,21 @@ export const projectsData = [
   {
     title: "GatiKi.Club",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+      "Empowering open-source projects with collaborative tools, issue tracking, and hiring.",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
     imageUrl: corpcommentImg,
   },
   {
     title: "Artos.live",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
+      "A web3 project to bring NFTs to, and empower, the art of creating value.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
     imageUrl: rmtdevImg,
   },
   {
     title: "FindAlly.com",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "A public web app to collaborate remotely, with FindAlly.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
   },
@@ -93,15 +93,17 @@ export const skillsData = [
   "Next.js",
   "Node.js",
   "Git",
-  "Tailwind",
+  "TailwindCSS",
   "Prisma",
   "MongoDB",
-  "Redux",
+  // "Redux",
+  "Chart.js",
   "GraphQL",
-  "Apollo",
   "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
+  "Flutter",
+  "Block Chain",
+  "Solidity",
+  // "Python",
+  // "Django",
   "Framer Motion",
 ] as const;
