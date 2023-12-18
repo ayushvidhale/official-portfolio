@@ -31,7 +31,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://avatars.githubusercontent.com/u/97044609?v=4"
+              src="https://media.licdn.com/dms/image/D5603AQG5FjYc1l__eQ/profile-displayphoto-shrink_800_800/0/1672212599874?e=2147483647&v=beta&t=eumvMt9bCn9LWwCste4hl1YrD0BoIVdXxN_Q9izvxAk"
               alt="Ayush Vidhale"
               width="192"
               height="192"
