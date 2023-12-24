@@ -30,13 +30,9 @@ export default function Intro() {
               duration: 0.2,
             }}
           >
-            <Image
+            <img
               src="https://media.licdn.com/dms/image/D5603AQG5FjYc1l__eQ/profile-displayphoto-shrink_800_800/0/1672212599874?e=2147483647&v=beta&t=eumvMt9bCn9LWwCste4hl1YrD0BoIVdXxN_Q9izvxAk"
               alt="Ayush Vidhale"
-              width="192"
-              height="192"
-              quality="95"
-              priority={true}
               className="h-32 w-32 rounded-full object-cover border-[0.15rem] border-gray-200 shadow-xl"
             />
           </motion.div>
