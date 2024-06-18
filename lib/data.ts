@@ -56,7 +56,7 @@ export const experiencesData = [
     description:
       "Freelanced as a full-stack developer, building various web applications and solutions for global clients.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2022 - present",
   },
 ] as const;
 
