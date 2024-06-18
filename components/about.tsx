@@ -10,25 +10,27 @@ export default function About() {
 
   return (
     <motion.section
-  ref={ref}
-  className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
-  initial={{ opacity: 0, y: 100 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: 0.175 }}
-  id="about"
->
-  <SectionHeading>About Me</SectionHeading>
-  <p className="mb-3">
-    👨‍💻 Passionate full-stack developer pursuing a B.Tech in Information Technology at VIT'25, Pune, India. 🚀
-  
-     Founder & CEO of GatiKi.Club, empowering open-source projects with collaborative tools, issue tracking, and hiring solutions. Freelance full-stack developer for global clients. 🌎
-  </p>
-  <p className="mb-3">
-    🛠️ Core tech stack: React, Next.js, Node.js, MongoDB. Proficient in TypeScript and Prisma. Eager to explore new technologies.
-    🎮 When not coding, I enjoy gaming, watching movies, and quality time with my cat. 🐶 Curious learner interested in history, philosophy, and guitar. 🎸
-  </p>
-</motion.section>
-
-
+      ref={ref}
+      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.175 }}
+      id="about"
+    >
+      <SectionHeading>About Me</SectionHeading>
+      <p className="mb-3">
+        I am a dedicated full-stack developer with expertise in scalable web
+        applications and SaaS solutions. As Founder & CEO of GatiKi.Club, I
+        empower open-source projects with advanced tools. I also provide
+        freelance development services globally.
+      </p>
+      <p className="mb-3">
+        My technical skills include React, Next.js, Node.js, MongoDB,
+        TypeScript, and Prisma. I am passionate about exploring new
+        technologies. Outside of work, I enjoy gaming, films, and spending time
+        with my pet. I also have interests in history, philosophy, and playing
+        the guitar.
+      </p>
+    </motion.section>
   );
 }
