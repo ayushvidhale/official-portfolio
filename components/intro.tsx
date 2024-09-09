@@ -31,8 +31,8 @@ export default function Intro() {
             }}
           >
             <img
-              src="https://media.licdn.com/dms/image/D4D03AQEGJJZqho8mRw/profile-displayphoto-shrink_800_800/0/1719685950546?e=1727913600&v=beta&t=MQ-yNhqGWeqISutngn9tlyIDPQoA84cmDPuo3wCZ5Aw"
-              alt="Ayush Vidhale"
+              src="./ayush.jpeg"
+              alt=""
               className="h-32 w-32 rounded-full object-cover border-[0.15rem] border-gray-200 shadow-xl"
             />
           </motion.div>
