@@ -35,18 +35,18 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Full-Stack Developer",
+    title: "Full-Stack Engineer",
     location: "HeyRocket",
     description:
-      "Developed a full-stack application with Next.js, Node.js, and Docker. Implemented KYC, tokenized authentication, and automated tasks.",
+      "Engineered a full-stack solution using Next.js, Node.js, and Docker. Led the implementation of KYC, tokenized authentication, and task automation to enhance platform efficiency.",
     icon: React.createElement(CgWorkAlt),
     date: "Jan 2024 - Jun 2024",
   },
   {
-    title: "Full-Stack Developer",
+    title: "Software Development Intern",
     location: "WaveMaxx",
     description:
-      "Collaborated on a real-time data platform for 15,000 IoT devices using MQTT and web sockets. Integrated Google Maps API for device state visualization.",
+      "Contributed to a large-scale real-time data platform supporting 15,000 IoT devices with MQTT and WebSockets. Integrated Google Maps API for dynamic device state visualization.",
     icon: React.createElement(CgWorkAlt),
     date: "Jan 2024 - Mar 2024",
   },
@@ -54,7 +54,7 @@ export const experiencesData = [
     title: "Freelance Full-Stack Developer",
     location: "Remote",
     description:
-      "Freelanced as a full-stack developer, building various web applications and solutions for global clients.",
+      "Provided full-stack development services to global clients, delivering customized web applications and technical solutions across diverse industries.",
     icon: React.createElement(FaReact),
     date: "2022 - present",
   },
@@ -62,19 +62,20 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "WindCraftUI",
+    description:
+      "A full-stack project using Next.js, MongoDB, and Stripe for payment checkouts. Optimized for SEO with server response time below 700ms.",
+    tags: ["Founder", "Next.js", "MongoDB", "TailwindCSS", "Stripe"],
+    imageUrl: rmtdevImg,
+  },
+  {
     title: "GatiKi.Club",
     description:
       "A real-time collaboration platform with GitHub integration. Achieved rank #1 on Google search for dynamic page building and SEO optimization.",
     tags: ["Next.js", "Firebase", "NextUI", "Razorpay"],
     imageUrl: corpcommentImg,
   },
-  {
-    title: "WindCraftUI",
-    description:
-      "A full-stack project using Next.js, MongoDB, and Stripe for payment checkouts. Optimized for SEO with server response time below 700ms.",
-    tags: ["Next.js", "MongoDB", "TailwindCSS", "Stripe"],
-    imageUrl: rmtdevImg,
-  },
+
   {
     title: "Artos.live",
     description:
@@ -85,23 +86,28 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
   "Node.js",
+  "React",
+  "Express.js",
+  "Next.js",
   "Git",
+  "Docker",
+  "Kubernetes",
+  // "HTML",
+  // "CSS",
+  // "JavaScript",
+  "TypeScript",
   "TailwindCSS",
   "Prisma",
   "MongoDB",
+  "MySQL",
+  "Figma",
   "Redux",
   "GraphQL",
-  "Express.js",
-  "AWS",
-  "Docker",
+  "Solidity",
+  // "Third Web",
+  "AWS EC2",
   "Firebase",
-  "GCP",
+  // "GCP",
   "Azure",
 ] as const;

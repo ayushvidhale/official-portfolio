@@ -19,17 +19,15 @@ export default function About() {
     >
       <SectionHeading>About Me</SectionHeading>
       <p className="mb-3">
-        I am a dedicated full-stack developer with expertise in scalable web
-        applications and SaaS solutions. As Founder & CEO of GatiKi.Club, I
-        empower open-source projects with advanced tools. I also provide
-        freelance development services globally.
+        Full-Stack Developer with expertise in building scalable SaaS solutions
+        using technologies like Next.js, Node.js, and Docker. Experienced in
+        leading teams, optimizing performance, and integrating advanced APIs.
       </p>
       <p className="mb-3">
-        My technical skills include React, Next.js, Node.js, MongoDB,
-        TypeScript, and Prisma. I am passionate about exploring new
-        technologies. Outside of work, I enjoy gaming, films, and spending time
-        with my pet. I also have interests in history, philosophy, and playing
-        the guitar.
+        Actively involved in contributing to open-source projects and
+        participating in hackathons, where I continuously improve my skills and
+        collaborate with talented developers. Passionate about solving complex
+        problems and delivering high-quality software.
       </p>
     </motion.section>
   );
