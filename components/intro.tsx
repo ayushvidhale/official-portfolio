@@ -37,7 +37,7 @@ export default function Intro() {
             />
           </motion.div>
 
-          <motion.span
+          {/* <motion.span
             className="absolute bottom-0 right-0 text-4xl"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -49,17 +49,21 @@ export default function Intro() {
             }}
           >
             👋
-          </motion.span>
+          </motion.span> */}
         </div>
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-10 mt-4 px-4 text-2xl opacity-70 font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold text-xl">Hello, I'm Ayush.</span> <br />
-        <span className="font-bold">Full-stack Web developer.</span> <br />
+        <span className="font-bold text-xl opacity-100">Hello, I'm Ayush.</span>{" "}
+        <br />
+        <span className="font-bold opacity-100">
+          Full-stack Web developer.
+        </span>{" "}
+        <br />
         <span className="font-bold"></span>Creating <u>scalable</u>
         <span className="font-bold"> interactive and dynamic </span>web
         solutions.

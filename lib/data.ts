@@ -12,14 +12,6 @@ export const links = [
     hash: "#home",
   },
   {
-    name: "About",
-    hash: "#about",
-  },
-  {
-    name: "Projects",
-    hash: "#projects",
-  },
-  {
     name: "Skills",
     hash: "#skills",
   },
@@ -28,9 +20,17 @@ export const links = [
     hash: "#experience",
   },
   {
+    name: "Projects",
+    hash: "#projects",
+  },
+  {
     name: "Contact",
     hash: "#contact",
   },
+  // {
+  //   name: "About",
+  //   hash: "#about",
+  // },
 ] as const;
 
 export const experiencesData = [
@@ -76,38 +76,34 @@ export const projectsData = [
     imageUrl: corpcommentImg,
   },
 
-  {
-    title: "Artos.live",
-    description:
-      "A Web3 project enabling users to create, assign, and monitor webpage walls with MetaMask and Phantom wallet integration.",
-    tags: ["React", "Express.js", "MetaMask", "Phantom Wallet"],
-    imageUrl: wordanalyticsImg,
-  },
+  // {
+  //   title: "Artos.live",
+  //   description:
+  //     "A Web3 project enabling users to create, assign, and monitor webpage walls with MetaMask and Phantom wallet integration.",
+  //   tags: ["React", "Express.js", "MetaMask", "Phantom Wallet"],
+  //   imageUrl: wordanalyticsImg,
+  // },
 ] as const;
 
 export const skillsData = [
-  "Node.js",
-  "React",
-  "Express.js",
   "Next.js",
+  "React",
+  "Node.js",
+  "Express.js",
+  "TypeScript",
   "Git",
+  "Redis",
   "Docker",
   "Kubernetes",
-  // "HTML",
-  // "CSS",
-  // "JavaScript",
-  "TypeScript",
   "TailwindCSS",
   "Prisma",
   "MongoDB",
   "MySQL",
   "Figma",
-  "Redux",
   "GraphQL",
   "Solidity",
-  // "Third Web",
+  "Third Web",
   "AWS EC2",
   "Firebase",
   // "GCP",
-  "Azure",
 ] as const;
