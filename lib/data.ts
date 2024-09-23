@@ -35,28 +35,28 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Full-Stack Engineer",
-    location: "HeyRocket",
+    title: "Full-Stack Developer",
+    location: "Shipping Aggregator",
     description:
-      "Engineered a full-stack solution using Next.js, Node.js, and Docker. Led the implementation of KYC, tokenized authentication, and task automation to enhance platform efficiency.",
+      "Joined as a Full-Stack Developer to build a solution using Next.js, Node.js, and Redis. Implemented KYC APIs, tokenized authentication, and task automation with Docker, running on AWS EC2, enhancing platform security and efficiency.",
     icon: React.createElement(CgWorkAlt),
-    date: "Jan 2024 - Jun 2024",
+    date: "May 2024 - Aug 2024",
   },
   {
     title: "Software Development Intern",
     location: "WaveMaxx",
     description:
-      "Contributed to a large-scale real-time data platform supporting 15,000 IoT devices with MQTT and WebSockets. Integrated Google Maps API for dynamic device state visualization.",
+      "Collaborated on a real-time data platform supporting 15,000 IoT devices using MQTT and WebSockets. Integrated Google Maps API for device state visualization and developed a super admin panel for device management.",
     icon: React.createElement(CgWorkAlt),
     date: "Jan 2024 - Mar 2024",
   },
   {
-    title: "Freelance Full-Stack Developer",
-    location: "Remote",
+    title: "Full-Stack Developer",
+    location: "FindingAlly",
     description:
-      "Provided full-stack development services to global clients, delivering customized web applications and technical solutions across diverse industries.",
-    icon: React.createElement(FaReact),
-    date: "2022 - present",
+      "Developed a remote study system integrating Jitsi Meet and Alby Chat APIs. Built a room-matching algorithm for connecting users based on shared interests and behavior.",
+    icon: React.createElement(CgWorkAlt),
+    date: "May 2023 - Aug 2023",
   },
 ] as const;
 
@@ -65,7 +65,7 @@ export const projectsData = [
     title: "WindCraftUI",
     description:
       "A full-stack project using Next.js, MongoDB, and Stripe for payment checkouts. Optimized for SEO with server response time below 700ms.",
-    tags: ["Founder", "Next.js", "MongoDB", "TailwindCSS", "Stripe"],
+    tags: ["Next.js", "MongoDB", "TailwindCSS", "Stripe"],
     imageUrl: rmtdevImg,
   },
   {
