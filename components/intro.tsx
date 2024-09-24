@@ -60,13 +60,12 @@ export default function Intro() {
       >
         <span className="font-bold text-xl opacity-100">Hello, I'm Ayush.</span>{" "}
         <br />
-        <span className="font-bold opacity-100">
-          Full-stack Web developer.
-        </span>{" "}
-        <br />
-        <span className="font-bold"></span>Creating <u>scalable</u>
-        <span className="font-bold"> interactive and dynamic </span>web
-        solutions.
+        <span className="font-bold opacity-100">DevOps Engineer</span> <br />
+        <p className="text-xl">
+          <span className="font-bold text-sm"></span>Creating <u>scalable</u>,{" "}
+          <i>interactive</i> and<span className="font-bold"> dynamic </span>{" "}
+          tech solutions.
+        </p>
       </motion.h1>
 
       <motion.div
