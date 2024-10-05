@@ -8,14 +8,14 @@ import Skills from "@/components/skills";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center px-4">
-      <Intro />
-      <SectionDivider />
-      <Skills />
-      <Experience />
-      <Projects />
-      <Contact />
+    <main className="flex flex-col items-start px-4">
+      {/* <Intro /> */}
       {/* <About /> */}
+      {/* <SectionDivider /> */}
+      <Projects />
+      {/* <Skills /> */}
+      {/* <Experience /> */}
+      {/* <Contact /> */}
     </main>
   );
 }

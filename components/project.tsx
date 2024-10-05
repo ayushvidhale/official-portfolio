@@ -30,41 +30,45 @@ export default function Project({
       }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >
-      <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-        <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
-          <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
-            {description}
-          </p>
-          <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
-            {tags.map((tag, index) => (
-              <li
-                className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
-                key={index}
-              >
-                {tag}
-              </li>
-            ))}
-          </ul>
+      <section className="bg-white max-w-[46rem] border border-gray-200 rounded-xl overflow-hidden relative p-5 shadow-md hover:bg-gray-50 transition">
+        <div className="flex items-start">
+          {/* Left section with logo/image */}
+          <div className="mr-4">
+            <img
+              src={imageUrl}
+              alt="Project Logo"
+              // width={60}
+              // height={60}
+              className="rounded-lg border w-40 h-40 object-cover"
+            />
+          </div>
+          {/* Main Content */}
+          <div className="flex flex-col">
+            <h3 className="text-lg font-semibold text-gray-800">{title}</h3>
+            <p className="text-sm text-gray-600 mt-1">{description}</p>
+          </div>
+          {/* Price or Additional Tag */}
+          <div className="ml-auto flex items-center">
+            <span className="text-sm font-semibold bg-blue-100 text-blue-600 py-1 px-3 rounded-full">
+              $173/mo
+            </span>
+          </div>
         </div>
 
-        <Image
-          src={imageUrl}
-          alt="Project I worked on"
-          quality={95}
-          className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
-        transition 
-        group-hover:scale-[1.04]
-        group-hover:-translate-x-3
-        group-hover:translate-y-3
-        group-hover:-rotate-2
-
-        group-even:group-hover:translate-x-3
-        group-even:group-hover:translate-y-3
-        group-even:group-hover:rotate-2
-
-        group-even:right-[initial] group-even:-left-40"
-        />
+        {/* Graph/Visualization at the bottom */}
+        <div className="mt-6">
+          <div className="relative h-24 w-full bg-gray-100 rounded-lg p-2">
+            {/* Placeholder for the chart (simple illustration) */}
+            <svg viewBox="0 0 100 30" className="w-full h-full text-rose-400">
+              <polyline
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                points="0,30 10,25 20,20 30,10 40,12 50,18 60,8 70,2 80,5 90,25 100,10"
+              />
+            </svg>
+          </div>
+        </div>
       </section>
     </motion.div>
   );

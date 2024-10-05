@@ -1,11 +1,11 @@
 "use client";
 
 import React from "react";
-import SectionHeading from "./section-heading";
+import SectionHeading from "@/components/section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import { sendEmail } from "@/actions/sendEmail";
-import SubmitBtn from "./submit-btn";
+import SubmitBtn from "@/components/submit-btn";
 import toast from "react-hot-toast";
 
 export default function Contact() {
@@ -31,7 +31,7 @@ export default function Contact() {
     >
       <SectionHeading>Contact me</SectionHeading>
 
-      <p className="text-gray-700 -mt-6 font-semibold">
+      <p className="text-gray-700 -mt-6 light:text-white/80">
         For project inquiries or collaboration opportunities, feel free to send
         a message through this form.
         {/* <a className="underline" href="mailto:example@gmail.com">

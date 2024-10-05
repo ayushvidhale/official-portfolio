@@ -7,25 +7,25 @@ import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
-  {
-    name: "Home",
-    hash: "#home",
-  },
+  // {
+  //   name: "Home",
+  //   hash: "#home",
+  // },
   {
     name: "Skills",
-    hash: "#skills",
+    hash: "/#skills",
   },
   {
     name: "Experience",
-    hash: "#experience",
+    hash: "/experience",
   },
   {
     name: "Projects",
-    hash: "#projects",
+    hash: "/#projects",
   },
   {
     name: "Contact",
-    hash: "#contact",
+    hash: "/contact",
   },
   // {
   //   name: "About",
@@ -64,16 +64,18 @@ export const projectsData = [
   {
     title: "WindCraftUI",
     description:
-      "A full-stack project using Next.js, MongoDB, and Stripe for payment checkouts. Optimized for SEO with server response time below 700ms.",
+      "Beautifully crafted UI components, ready for your next projects.",
     tags: ["Next.js", "MongoDB", "TailwindCSS", "Stripe"],
-    imageUrl: rmtdevImg,
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi-NCONl9jSvVEtzY1sHVexfLgIEsKXs6umg&s",
   },
   {
     title: "GatiKi.Club",
     description:
-      "A real-time collaboration platform with GitHub integration. Achieved rank #1 on Google search for dynamic page building and SEO optimization.",
+      "Empowering open-source projects with collaborative tools, issue tracking, and hiring.",
     tags: ["Next.js", "Firebase", "NextUI", "Razorpay"],
-    imageUrl: corpcommentImg,
+    imageUrl:
+      "https://yt3.googleusercontent.com/Zu-Q5JdaiT6qM53zk80_15YSXMw5xUqHO2532hbU9WNCx3vIaak0gTg_UW9mcZ77GdAteEyoVg=s900-c-k-c0x00ffffff-no-rj",
   },
 
   // {
