@@ -54,7 +54,7 @@ export default function Projects() {
                   </span>
                 </div>
               </div>
-              <p className="text-sm text-gray-400">
+              <p className="text-sm text-gray-500">
                 {" "}
                 Beautifully crafted Tailwind CSS components, ready for your next
                 project
@@ -93,10 +93,45 @@ export default function Projects() {
                   </span>
                 </div>
               </div>
-              <p className="text-sm text-gray-400">
+              <p className="text-sm text-gray-500">
                 {" "}
                 Source code management tool for startups and open-source
                 community
+              </p>
+            </div>
+          </a>
+        </motion.div>
+
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.1,
+          }}
+          className="group"
+        >
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://quizmasterai.vercel.app/"
+          >
+            <div className="bg-white hover:bg-gray-50 h-full w-full text-start rounded-3xl border shadow-sm p-10">
+              <div className="flex space-x-4 mb-4">
+                <img className="w-8 h-8" src="./quizmasterai.png" />
+                <div className="flex justify-between w-full">
+                  <h1 className="text-lg text-gray-700 font-semibold ">
+                    {" "}
+                    Quiz Master AI
+                  </h1>
+                  <span className="inline-flex items-center rounded-full bg-pink-50 px-2 py-1 h-fit text-[12px] font-semibold text-pink-700 ring-1 ring-inset ring-pink-600/20">
+                    Hackathon Project
+                  </span>
+                </div>
+              </div>
+              <p className="text-sm text-gray-500">
+                {" "}
+                Get Job-Ready with AI-Powered Questions
               </p>
             </div>
           </a>
