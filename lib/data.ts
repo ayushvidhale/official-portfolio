@@ -68,6 +68,7 @@ export const projectsData = [
     tags: ["Next.js", "MongoDB", "TailwindCSS", "Stripe"],
     imageUrl:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi-NCONl9jSvVEtzY1sHVexfLgIEsKXs6umg&s",
+    websiteUrl: "https://windcraft-production/vercel.app/",
   },
   {
     title: "GatiKi.Club",
@@ -76,6 +77,7 @@ export const projectsData = [
     tags: ["Next.js", "Firebase", "NextUI", "Razorpay"],
     imageUrl:
       "https://yt3.googleusercontent.com/Zu-Q5JdaiT6qM53zk80_15YSXMw5xUqHO2532hbU9WNCx3vIaak0gTg_UW9mcZ77GdAteEyoVg=s900-c-k-c0x00ffffff-no-rj",
+    websiteUrl: "https://gatiki.club/join",
   },
 
   // {

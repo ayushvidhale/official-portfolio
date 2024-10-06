@@ -24,7 +24,7 @@ export default function Intro() {
   return (
     <section
       id="home"
-      className=" h-screen text-black text-start sm:mb-0 scroll-mt-[100rem] bg-gray-50 p-6 rounded-lg shadow-md"
+      className=" h-screen text-black text-start sm:mb-0 scroll-mt-[100rem] p-6 rounded-lg"
     >
       <div className="flex items-center justify-start">
         <div className="relative">
@@ -46,7 +46,7 @@ export default function Intro() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 px-4 text-3xl font-semibold text-gray-800 sm:text-4xl"
+        className="mb-10 mt-4 px-4 text-3xl text-gray-800 sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
@@ -55,77 +55,13 @@ export default function Intro() {
         <p className="mt-2 text-sm text-gray-600">
           Building{" "}
           <span className="font-semibold">
-            <span className="font-extrabold text-green-800">scalable</span> tech
-            solutions
+            <span className="">scalable</span> tech solutions
           </span>{" "}
           in public, passionate about the latest <u>technologies</u>,{" "}
           <i>frameworks</i>, and driving{" "}
           <span className="font-extrabold">innovation</span>.
         </p>
       </motion.h1>
-
-      {/* <motion.div
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.1,
-        }}
-        className="flex flex-col sm:flex-row items-center gap-4 my-10"
-      >
-        <a
-          href="https://your-startup-2.com"
-          className="inline-flex whitespace-nowrap items-center justify-center p-2 text-base font-medium text-gray-500 rounded-lg hover:bg-gray-200 hover:text-gray-900 bg-gray-100 border border-gray-300"
-        >
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi-NCONl9jSvVEtzY1sHVexfLgIEsKXs6umg&s"
-            alt="Startup 2 Logo"
-            className="w-8 h-8 rounded-full border me-3"
-          />
-          <span className="w-full">WindCraftUI</span>
-          <svg
-            className="w-4 h-4 ms-2 rtl:rotate-180"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 14 10"
-          >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M1 5h12m0 0L9 1m4 4L9 9"
-            />
-          </svg>
-        </a>
-
-        <a
-          href="https://your-startup-2.com"
-          className="inline-flex whitespace-nowrap items-center justify-center p-2 text-base font-medium text-gray-500 rounded-lg hover:bg-gray-200 hover:text-gray-900 bg-gray-100 border border-gray-300"
-        >
-          <img
-            src="https://yt3.googleusercontent.com/Zu-Q5JdaiT6qM53zk80_15YSXMw5xUqHO2532hbU9WNCx3vIaak0gTg_UW9mcZ77GdAteEyoVg=s900-c-k-c0x00ffffff-no-rj"
-            alt="Startup 2 Logo"
-            className="w-8 h-8 rounded-full border me-3"
-          />
-          <span className="w-full">Gatiki Club</span>
-          <svg
-            className="w-4 h-4 ms-2 rtl:rotate-180"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 14 10"
-          >
-            <path
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M1 5h12m0 0L9 1m4 4L9 9"
-            />
-          </svg>
-        </a>
-      </motion.div> */}
 
       <motion.div
         initial={{ opacity: 0, y: 100 }}
@@ -147,7 +83,7 @@ export default function Intro() {
               <span className="underline group-hover:no-underline">Home</span>
             </Link>
           </motion.li>
-          <motion.li
+          {/* <motion.li
             whileHover={{ scale: 1.05, x: 10 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
@@ -160,7 +96,7 @@ export default function Intro() {
                 Experience
               </span>
             </Link>
-          </motion.li>
+          </motion.li> */}
 
           <motion.li
             whileHover={{ scale: 1.05, x: 10 }}

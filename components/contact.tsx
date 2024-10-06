@@ -31,7 +31,7 @@ export default function Contact() {
     >
       <SectionHeading>Contact me</SectionHeading>
 
-      <p className="text-gray-700 -mt-6 font-semibold">
+      <p className="text-gray-700 text-sm -mt-6 font-semibold">
         For project inquiries or collaboration opportunities, feel free to send
         a message through this form.
         {/* <a className="underline" href="mailto:example@gmail.com">

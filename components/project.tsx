@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { FaUsers } from "react-icons/fa";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -12,6 +13,7 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  websiteUrl,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -24,52 +26,31 @@ export default function Project({
   return (
     <motion.div
       ref={ref}
-      style={{
-        scale: scaleProgess,
-        opacity: opacityProgess,
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{
+        delay: 0.1,
       }}
-      className="group mb-3 sm:mb-8 last:mb-0"
+      className="group"
     >
-      <section className="bg-white max-w-[46rem] border border-gray-200 rounded-xl overflow-hidden relative p-5 shadow-md hover:bg-gray-50 transition">
-        <div className="flex items-start">
-          {/* Left section with logo/image */}
-          <div className="mr-4">
-            <img
-              src={imageUrl}
-              alt="Project Logo"
-              // width={60}
-              // height={60}
-              className="rounded-lg border w-40 h-40 object-cover"
-            />
+      <a target="_blank" rel="noopener noreferrer" href={websiteUrl}>
+        <div className="bg-white hover:bg-gray-50 h-full w-full text-start rounded-3xl border shadow-sm p-10">
+          <div className="flex space-x-4 mb-4">
+            <img className="w-8 h-8" src={imageUrl} />
+            <div className="flex justify-between w-full">
+              <h1 className="text-lg text-gray-700 font-semibold ">
+                {" "}
+                {title}{" "}
+              </h1>
+              <h3 className="flex whitespace-nowrap font-bold text-green-600">
+                {" "}
+                50+ active users
+              </h3>
+            </div>
           </div>
-          {/* Main Content */}
-          <div className="flex flex-col">
-            <h3 className="text-lg font-semibold text-gray-800">{title}</h3>
-            <p className="text-sm text-gray-600 mt-1">{description}</p>
-          </div>
-          {/* Price or Additional Tag */}
-          <div className="ml-auto flex items-center">
-            <span className="text-sm font-semibold bg-blue-100 text-blue-600 py-1 px-3 rounded-full">
-              $173/mo
-            </span>
-          </div>
+          <p className="text-sm text-gray-400"> {description}</p>
         </div>
-
-        {/* Graph/Visualization at the bottom */}
-        <div className="mt-6">
-          <div className="relative h-24 w-full bg-gray-100 rounded-lg p-2">
-            {/* Placeholder for the chart (simple illustration) */}
-            <svg viewBox="0 0 100 30" className="w-full h-full text-rose-400">
-              <polyline
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                points="0,30 10,25 20,20 30,10 40,12 50,18 60,8 70,2 80,5 90,25 100,10"
-              />
-            </svg>
-          </div>
-        </div>
-      </section>
+      </a>
     </motion.div>
   );
 }

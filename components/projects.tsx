@@ -5,23 +5,102 @@ import SectionHeading from "./section-heading";
 import { projectsData } from "@/lib/data";
 import Project from "./project";
 import { useSectionInView } from "@/lib/hooks";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function Projects() {
   const { ref } = useSectionInView("Projects", 0.5);
 
   return (
     <section ref={ref} id="projects" className=" mb-28">
-      <SectionHeading>Projects</SectionHeading>
+      {/* <SectionHeading>Projects</SectionHeading>
       <p className="text-md opacity-80 mb-12 -mt-6 font-semibold w-fit">
         Here are a few of my passion projects that evolved into thriving SaaS
         businesses
-      </p>
-      <div>
-        {projectsData.map((project, index) => (
+      </p> */}
+      <div className="grid lg:grid-cols-2 grid-cols-1 w-full gap-4">
+        {/* {projectsData.map((project, index) => (
           <React.Fragment key={index}>
             <Project {...project} />
           </React.Fragment>
-        ))}
+        ))} */}
+
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.1,
+          }}
+          className="group"
+        >
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://windcraft-production.vercel.app/"
+          >
+            <div className="bg-white hover:bg-gray-50 h-full w-full text-start rounded-3xl border shadow-sm p-10">
+              <div className="flex space-x-4 mb-4">
+                <img
+                  className="w-8 h-8"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi-NCONl9jSvVEtzY1sHVexfLgIEsKXs6umg&s"
+                />
+                <div className="flex justify-between w-full">
+                  <h1 className="text-lg text-gray-700 font-semibold ">
+                    {" "}
+                    WindCraftUI
+                  </h1>
+                  <span className="inline-flex items-center rounded-full bg-green-50 px-2 py-1 h-fit text-[12px] font-semibold text-green-700 ring-1 ring-inset ring-green-600/20">
+                    50+ active users
+                  </span>
+                </div>
+              </div>
+              <p className="text-sm text-gray-400">
+                {" "}
+                Beautifully crafted Tailwind CSS components, ready for your next
+                project
+              </p>
+            </div>
+          </a>
+        </motion.div>
+
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.1,
+          }}
+          className="group"
+        >
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://gatiki.club/join"
+          >
+            <div className="bg-white hover:bg-gray-50 h-full w-full text-start rounded-3xl border shadow-sm p-10">
+              <div className="flex space-x-4 mb-4">
+                <img
+                  className="w-8 h-8"
+                  src="https://yt3.googleusercontent.com/Zu-Q5JdaiT6qM53zk80_15YSXMw5xUqHO2532hbU9WNCx3vIaak0gTg_UW9mcZ77GdAteEyoVg=s900-c-k-c0x00ffffff-no-rj"
+                />
+                <div className="flex justify-between w-full">
+                  <h1 className="text-lg text-gray-700 font-semibold ">
+                    {" "}
+                    GatiKi Club
+                  </h1>
+                  <span className="inline-flex items-center rounded-full bg-purple-50 px-2 py-1 h-fit text-[12px] font-semibold text-purple-700 ring-1 ring-inset ring-purple-600/20">
+                    Building
+                  </span>
+                </div>
+              </div>
+              <p className="text-sm text-gray-400">
+                {" "}
+                Source code management tool for startups and open-source
+                community
+              </p>
+            </div>
+          </a>
+        </motion.div>
       </div>
     </section>
   );
