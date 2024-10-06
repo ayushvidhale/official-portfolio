@@ -75,45 +75,6 @@ export default function Projects() {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://gatiki.club/join"
-          >
-            <div className="bg-white hover:bg-gray-50 h-full w-full text-start rounded-3xl border shadow-sm p-10">
-              <div className="flex space-x-4 mb-4">
-                <img
-                  className="w-8 h-8"
-                  src="https://yt3.googleusercontent.com/Zu-Q5JdaiT6qM53zk80_15YSXMw5xUqHO2532hbU9WNCx3vIaak0gTg_UW9mcZ77GdAteEyoVg=s900-c-k-c0x00ffffff-no-rj"
-                />
-                <div className="flex justify-between w-full">
-                  <h1 className="text-lg text-gray-700 font-semibold ">
-                    {" "}
-                    GatiKi Club
-                  </h1>
-                  <span className="inline-flex items-center rounded-full bg-purple-50 px-2 py-1 h-fit text-[12px] font-semibold text-purple-700 ring-1 ring-inset ring-purple-600/20">
-                    Building
-                  </span>
-                </div>
-              </div>
-              <p className="text-sm text-gray-500">
-                {" "}
-                Source code management tool for startups and open-source
-                community
-              </p>
-            </div>
-          </a>
-        </motion.div>
-
-        <motion.div
-          ref={ref}
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{
-            delay: 0.1,
-          }}
-          className="group"
-        >
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
             href="https://quizmasterai.vercel.app/"
           >
             <div className="bg-white hover:bg-gray-50 h-full w-full text-start rounded-3xl border shadow-sm p-10">
@@ -132,6 +93,45 @@ export default function Projects() {
               <p className="text-sm text-gray-500">
                 {" "}
                 Get Job-Ready with AI-Powered Questions
+              </p>
+            </div>
+          </a>
+        </motion.div>
+
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            delay: 0.1,
+          }}
+          className="group"
+        >
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://gatiki.club/join"
+          >
+            <div className="bg-white hover:bg-gray-50 h-full w-full text-start rounded-3xl border shadow-sm p-10">
+              <div className="flex space-x-4 mb-4">
+                <img
+                  className="w-8 h-8"
+                  src="https://gatiki.club/favicon.ico"
+                />
+                <div className="flex justify-between w-full">
+                  <h1 className="text-lg text-gray-700 font-semibold ">
+                    {" "}
+                    GatiKi Club
+                  </h1>
+                  <span className="inline-flex items-center rounded-full bg-purple-50 px-2 py-1 h-fit text-[12px] font-semibold text-purple-700 ring-1 ring-inset ring-purple-600/20">
+                    Building
+                  </span>
+                </div>
+              </div>
+              <p className="text-sm text-gray-500">
+                {" "}
+                Source code management tool for startups and open-source
+                community
               </p>
             </div>
           </a>

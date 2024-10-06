@@ -39,7 +39,7 @@ export default function RootLayout({
               </div>
             </aside>
 
-            <div className="p-4 px-8 sm:ml-96">{children}</div>
+            <div className="md:p-4 p-2 sm:ml-96">{children}</div>
             {/* <Footer /> */}
 
             <Toaster position="top-right" />
