@@ -38,23 +38,23 @@ export default function Projects() {
             rel="noopener noreferrer"
             href="https://windcraft-production.vercel.app/"
           >
-            <div className="bg-white hover:bg-gray-50 h-full w-full text-start rounded-3xl border shadow-sm p-10">
+            <div className="bg-white hover:bg-gray-50 h-full w-full text-start rounded-3xl border shadow-sm lg:p-10 p-4">
               <div className="flex space-x-4 mb-4">
                 <img
-                  className="w-8 h-8"
+                  className="w-6 h-6 md:w-8 md:h-8"
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi-NCONl9jSvVEtzY1sHVexfLgIEsKXs6umg&s"
                 />
                 <div className="flex justify-between w-full">
-                  <h1 className="text-lg text-gray-700 font-semibold ">
+                  <h1 className="md:text-lg text-base text-gray-700 font-semibold ">
                     {" "}
                     WindCraftUI
                   </h1>
-                  <span className="inline-flex items-center rounded-full bg-green-50 px-2 py-1 h-fit text-[12px] font-semibold text-green-700 ring-1 ring-inset ring-green-600/20">
+                  <span className="inline-flex items-center rounded-full bg-green-50 px-2 py-1 h-fit md:text-[12px] text-[10px] whitespace-nowrap font-semibold text-green-700 ring-1 ring-inset ring-green-600/20">
                     50+ active users
                   </span>
                 </div>
               </div>
-              <p className="text-sm text-gray-500">
+              <p className="md:text-sm text-[12px] text-gray-500">
                 {" "}
                 Beautifully crafted Tailwind CSS components, ready for your next
                 project
@@ -77,20 +77,23 @@ export default function Projects() {
             rel="noopener noreferrer"
             href="https://quizmasterai.vercel.app/"
           >
-            <div className="bg-white hover:bg-gray-50 h-full w-full text-start rounded-3xl border shadow-sm p-10">
+            <div className="bg-white hover:bg-gray-50 h-full w-full text-start rounded-3xl border shadow-sm lg:p-10 p-4">
               <div className="flex space-x-4 mb-4">
-                <img className="w-8 h-8" src="./quizmasterai.png" />
+                <img
+                  className="w-6 h-6 md:w-8 md:h-8"
+                  src="./quizmasterai.png"
+                />
                 <div className="flex justify-between w-full">
-                  <h1 className="text-lg text-gray-700 font-semibold ">
+                  <h1 className="md:text-lg text-base text-gray-700 font-semibold ">
                     {" "}
                     Quiz Master AI
                   </h1>
-                  <span className="inline-flex items-center rounded-full bg-pink-50 px-2 py-1 h-fit text-[12px] font-semibold text-pink-700 ring-1 ring-inset ring-pink-600/20">
+                  <span className="inline-flex items-center rounded-full bg-pink-50 px-2 py-1 h-fit md:text-[12px] text-[10px] whitespace-nowrap font-semibold text-pink-700 ring-1 ring-inset ring-pink-600/20">
                     Hackathon Project
                   </span>
                 </div>
               </div>
-              <p className="text-sm text-gray-500">
+              <p className="md:text-sm text-[12px] text-gray-500">
                 {" "}
                 Get Job-Ready with AI-Powered Questions
               </p>
@@ -112,23 +115,23 @@ export default function Projects() {
             rel="noopener noreferrer"
             href="https://gatiki.club/join"
           >
-            <div className="bg-white hover:bg-gray-50 h-full w-full text-start rounded-3xl border shadow-sm p-10">
-              <div className="flex space-x-4 mb-4">
+            <div className="bg-white hover:bg-gray-50 h-full w-full text-start rounded-3xl border shadow-sm lg:p-10 p-4">
+              <div className="flex space-x-2 md:space-x-4 mb-4">
                 <img
-                  className="w-8 h-8"
+                  className="w-6 h-6 md:w-8 md:h-8"
                   src="https://gatiki.club/favicon.ico"
                 />
                 <div className="flex justify-between w-full">
-                  <h1 className="text-lg text-gray-700 font-semibold ">
+                  <h1 className="md:text-lg text-base text-gray-700 font-semibold ">
                     {" "}
                     GatiKi Club
                   </h1>
-                  <span className="inline-flex items-center rounded-full bg-purple-50 px-2 py-1 h-fit text-[12px] font-semibold text-purple-700 ring-1 ring-inset ring-purple-600/20">
+                  <span className="inline-flex items-center rounded-full bg-purple-50 px-2 py-1 h-fit md:text-[12px] text-[10px] whitespace-nowrap font-semibold text-purple-700 ring-1 ring-inset ring-purple-600/20">
                     Building
                   </span>
                 </div>
               </div>
-              <p className="text-sm text-gray-500">
+              <p className="md:text-sm text-[12px] text-gray-500">
                 {" "}
                 Source code management tool for startups and open-source
                 community

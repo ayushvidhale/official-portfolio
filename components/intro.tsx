@@ -25,7 +25,7 @@ export default function Intro() {
   return (
     <section
       id="home"
-      className=" h-fit text-black text-start sm:mb-0 scroll-mt-[100rem] md:p-6 p-2 rounded-lg"
+      className="h-fit text-black text-start sm:mb-0 scroll-mt-[100rem] md:p-6 p-2 rounded-lg"
     >
       <div className="flex items-center justify-start">
         <div className="flex lg:grid w-full">
@@ -40,28 +40,26 @@ export default function Intro() {
             <img
               src="./ayush.jpeg"
               alt="Ayush's profile"
-              className="md:h-32 md:w-32 w-16 h-16 ms:0 lg:ms-6 rounded-full object-cover border border-gray-600 shadow-lg"
+              className="w-16 h-16 md:w-32 md:h-32 lg:ms-6 rounded-full object-cover border border-gray-600 shadow-lg"
             />
           </motion.div>
 
           <motion.h1
-            className="mb-10 mt-4 px-4 text-3xl text-gray-800 sm:text-4xl"
+            className="mt-4 px-2 md:px-4 text-xl sm:text-2xl md:text-3xl lg:text-4xl text-gray-800"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
           >
             <Link
               href={"/"}
-              className="font-bold text-3xl text-gray-900 hover:underline"
+              className="font-bold hover:underline text-gray-900"
             >
               Ayush Vidhale
             </Link>
             <br />
-            <p className="mt-2 text-sm text-gray-600">
+            <p className="mt-2 text-xs sm:text-sm md:text-base text-gray-600">
               Building{" "}
-              <span className="font-semibold">
-                <span className="">scalable</span> tech solutions
-              </span>{" "}
-              in public, passionate about the latest <u>technologies</u>, and{" "}
+              <span className="font-semibold">scalable tech solutions</span> in
+              public, passionate about the latest <u>technologies</u>, and{" "}
               <span className="font-extrabold">frameworks</span>.
             </p>
           </motion.h1>
@@ -69,7 +67,7 @@ export default function Intro() {
       </div>
 
       <motion.div
-        className="flex -mt-6 flex-row gap-4 px-4 text-lg font-medium"
+        className="flex pt-4 xs:pt-0 flex-row gap-4 px-2 md:px-4 text-base md:text-lg font-medium justify-start"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -82,7 +80,7 @@ export default function Intro() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <BsLinkedin className="text-2xl" />
+          <BsLinkedin className="text-xl md:text-2xl" />
         </a>
 
         <a
@@ -91,7 +89,7 @@ export default function Intro() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaGithubSquare className="text-3xl" />
+          <FaGithubSquare className="text-xl md:text-3xl" />
         </a>
 
         <a
@@ -100,125 +98,8 @@ export default function Intro() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaTwitterSquare className="text-3xl" />
+          <FaTwitterSquare className="text-xl md:text-3xl" />
         </a>
-      </motion.div>
-
-      {/* <motion.div
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.1 }}
-        className="my-10"
-      >
-        <ul className="flex flex-col gap-4 text-md">
-          <motion.li
-            whileHover={{ scale: 1.05, x: 10 }}
-            transition={{ type: "spring", stiffness: 300 }}
-          >
-            <Link
-              href="/"
-              className="flex items-center text-gray-500 hover:text-gray-900 group"
-            >
-              <FaProjectDiagram className="w-5 h-5 mr-2 group-hover:text-green-500 transition-colors" />
-              <span className="underline group-hover:no-underline">Home</span>
-            </Link>
-          </motion.li> */}
-      {/* <motion.li
-            whileHover={{ scale: 1.05, x: 10 }}
-            transition={{ type: "spring", stiffness: 300 }}
-          >
-            <Link
-              href="/experience"
-              className="flex items-center text-gray-500 hover:text-gray-900 group"
-            >
-              <FaLaptopCode className="w-5 h-5 mr-2 group-hover:text-blue-500 transition-colors" />
-              <span className="underline group-hover:no-underline">
-                Experience
-              </span>
-            </Link>
-          </motion.li> */}
-
-      {/* <motion.li
-            whileHover={{ scale: 1.05, x: 10 }}
-            transition={{ type: "spring", stiffness: 300 }}
-          >
-            <Link
-              href="/events"
-              className="flex items-center text-gray-500 hover:text-gray-900 group"
-            >
-              <FaUsers className="w-5 h-5 mr-2 group-hover:text-pink-500 transition-colors" />
-              <span className="underline group-hover:no-underline">
-                Public Events
-              </span>
-            </Link>
-          </motion.li>
-
-          <motion.li
-            whileHover={{ scale: 1.05, x: 10 }}
-            transition={{ type: "spring", stiffness: 300 }}
-          >
-            <a
-              href="https://medium.com/@ayushvidhale"
-              target="_blank"
-              rel="noreferrer"
-              className="flex items-center text-gray-500 hover:text-gray-900 group"
-            >
-              <BsMedium className="w-5 h-5 mr-2 group-hover:text-yellow-500 transition-colors" />
-              <span className="underline group-hover:no-underline">Blogs</span>
-            </a>
-          </motion.li> */}
-
-      {/* <motion.li
-            whileHover={{ scale: 1.05, x: 10 }}
-            transition={{ type: "spring", stiffness: 300 }}
-          >
-            <a
-              href="#contact"
-              className="flex items-center text-gray-500 hover:text-gray-900 group"
-            >
-              <FaEnvelope className="w-5 h-5 mr-2 group-hover:text-red-500 transition-colors" />
-              <span className="underline group-hover:no-underline">
-                Contact
-              </span>
-            </a>
-          </motion.li> */}
-
-      {/* <motion.li
-            whileHover={{ scale: 1.05, x: 10 }}
-            transition={{ type: "spring", stiffness: 300 }}
-          >
-            <Link
-              href="/podcasts"
-              className="flex items-center text-gray-500 hover:text-gray-900 group"
-            >
-              <FaPodcast className="w-5 h-5 mr-2 group-hover:text-purple-500 transition-colors" />
-              <span className="underline group-hover:no-underline">
-                Podcasts (Coming Soon)
-              </span>
-            </Link>
-          </motion.li>
-        </ul>
-      </motion.div> */}
-
-      <motion.div
-        className="flex flex-col sm:flex-row items-center mt-10 gap-4 px-4 text-lg font-medium"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.1,
-        }}
-      >
-        <Link
-          href="/contact"
-          className="group bg-rose-600 whitespace-nowrap flex text-gray-100 text-base px-4 py-2 rounded-lg  outline-none hover:bg-rose-500 transition shadow-md hover:scale-105"
-          onClick={() => {
-            setActiveSection("Contact");
-            setTimeOfLastClick(Date.now());
-          }}
-        >
-          <TbMessageDots className="mr-2 my-auto transition-opacity duration-300" />
-          Contact
-        </Link>
       </motion.div>
     </section>
   );

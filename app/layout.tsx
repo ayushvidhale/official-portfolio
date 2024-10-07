@@ -1,3 +1,4 @@
+"use client";
 import Header from "@/components/header";
 import "./globals.css";
 import { Inter } from "next/font/google";
@@ -7,6 +8,8 @@ import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
 import Intro from "@/components/intro";
+import { NextUIProvider } from "@nextui-org/react";
+import ContactButton from "@/components/contact-button";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,10 +26,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="light !scroll-smooth">
-      <body
-        className={`${inter.className} bg-[#e8e4e4] text-gray-950 relative pt-14`}
-      >
-        <ThemeContextProvider>
+      <body className={`${inter.className} bg-[#e8e4e4] text-gray-950 pt-14`}>
+        <NextUIProvider>
           <ActiveSectionContextProvider>
             {/* <Header /> */}
             <aside
@@ -44,8 +45,9 @@ export default function RootLayout({
 
             <Toaster position="top-right" />
             {/* <ThemeSwitch /> */}
+            {/* <ContactButton /> */}
           </ActiveSectionContextProvider>
-        </ThemeContextProvider>
+        </NextUIProvider>
       </body>
     </html>
   );
