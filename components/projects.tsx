@@ -38,7 +38,7 @@ export default function Projects() {
             rel="noopener noreferrer"
             href="https://windcraft-production.vercel.app/"
           >
-            <div className="bg-white hover:bg-gray-50 h-full w-full text-start rounded-3xl border shadow-sm lg:p-10 p-4">
+            <div className="bg-white hover:bg-gray-100 h-full w-full text-start rounded-3xl border shadow-sm lg:p-10 p-4">
               <div className="flex space-x-4 mb-4">
                 <img
                   className="w-6 h-6 md:w-8 md:h-8"
@@ -77,7 +77,7 @@ export default function Projects() {
             rel="noopener noreferrer"
             href="https://quizmasterai.vercel.app/"
           >
-            <div className="bg-white hover:bg-gray-50 h-full w-full text-start rounded-3xl border shadow-sm lg:p-10 p-4">
+            <div className="bg-white hover:bg-gray-100 h-full w-full text-start rounded-3xl border shadow-sm lg:p-10 p-4">
               <div className="flex space-x-4 mb-4">
                 <img
                   className="w-6 h-6 md:w-8 md:h-8"
@@ -115,7 +115,7 @@ export default function Projects() {
             rel="noopener noreferrer"
             href="https://gatiki.club/join"
           >
-            <div className="bg-white hover:bg-gray-50 h-full w-full text-start rounded-3xl border shadow-sm lg:p-10 p-4">
+            <div className="bg-white hover:bg-gray-100 h-full w-full text-start rounded-3xl border shadow-sm lg:p-10 p-4">
               <div className="flex space-x-2 md:space-x-4 mb-4">
                 <img
                   className="w-6 h-6 md:w-8 md:h-8"
