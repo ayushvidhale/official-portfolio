@@ -24,22 +24,26 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="light !scroll-smooth">
+    <html lang="en" className="!scroll-smooth">
       <body className={`${inter.className} bg-[#e8e4e4] text-gray-950 pt-14`}>
         <NextUIWrapper>
           <ActiveSectionContextProvider>
             {/* <Header /> */}
-            <aside
-              id="default-sidebar"
-              className="sm:fixed sm:top-0 sm:left-0 sm:z-40 sm:w-96 sm:h-screen sm:transition-transform sm:translate-x-0 w-full relative h-auto"
-              aria-label="Sidebar"
-            >
-              <div className="h-full px-4 py-8">
-                <Intro />
-              </div>
-            </aside>
+            <div className="flex flex-col sm:flex-row">
+              <aside
+                id="default-sidebar"
+                className="sm:fixed sm:top-0 sm:left-0 sm:z-40 sm:w-[400px] lg:w-[650px] sm:h-screen sm:transition-transform sm:translate-x-0 w-full relative h-auto"
+                aria-label="Sidebar"
+              >
+                <div className="h-full md:px-4 md:py-8">
+                  <Intro />
+                </div>
+              </aside>
 
-            <div className="md:p-4 p-2 sm:ml-96">{children}</div>
+              <div className="flex-grow md:p-4 p-2 sm:ml-[400px] lg:ml-[600px]">
+                {children}
+              </div>
+            </div>
             {/* <Footer /> */}
 
             <Toaster position="top-right" />

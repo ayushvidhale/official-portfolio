@@ -18,6 +18,7 @@ import {
 } from "react-icons/fa"; // Import icons from react-icons
 import { TbMessageDots } from "react-icons/tb";
 
+// Assuming your project structure is using the public directory to store images
 export default function Intro() {
   const { ref } = useSectionInView("Skills", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
@@ -25,7 +26,7 @@ export default function Intro() {
   return (
     <section
       id="home"
-      className="h-fit text-black text-start sm:mb-0 scroll-mt-[100rem] md:p-6 p-2 rounded-lg"
+      className="h-fit text-black text-start sm:mb-0 md:p-6 p-2 rounded-lg"
     >
       <div className="flex items-center justify-start">
         <div className="flex lg:grid w-full">
@@ -37,15 +38,16 @@ export default function Intro() {
               duration: 0.2,
             }}
           >
+            {/* Assuming the image is placed in the public folder */}
             <img
-              src="./ayush.jpeg"
+              src="/ayush.jpeg" // Use the correct path based on your image location
               alt="Ayush's profile"
-              className="w-16 h-16 md:w-32 md:h-32 lg:ms-6 rounded-full object-cover border border-gray-600 shadow-lg"
+              className="w-16 h-16 md:w-32 md:h-32 lg:ms-6 rounded-full object-cover border border-gray-400 shadow-lg"
             />
           </motion.div>
 
           <motion.h1
-            className="mt-4 px-2 md:px-4 text-xl sm:text-2xl md:text-3xl lg:text-4xl text-gray-800"
+            className="md:pt-4 pt-0  px-2 md:px-4 text-xl sm:text-2xl md:text-3xl lg:text-4xl text-gray-800"
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
           >
@@ -56,8 +58,8 @@ export default function Intro() {
               Ayush Vidhale
             </Link>
             <br />
-            <p className="mt-2 text-xs sm:text-sm md:text-base text-gray-600">
-              Building{" "}
+            <p className="md:pt-4 pt-0 text-xs sm:text-sm md:text-base text-gray-600">
+              Indie Hacker, building{" "}
               <span className="font-semibold">scalable tech solutions</span> in
               public, passionate about the latest <u>technologies</u>, and{" "}
               <span className="font-extrabold">frameworks</span>.
@@ -67,7 +69,7 @@ export default function Intro() {
       </div>
 
       <motion.div
-        className="flex pt-4 xs:pt-0 flex-row gap-4 px-2 md:px-4 text-base md:text-lg font-medium justify-start"
+        className="flex md:pt-8 pt-4 flex-row gap-4 px-2 md:px-4 text-base md:text-lg font-medium md:justify-start justify-center"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -75,30 +77,30 @@ export default function Intro() {
         }}
       >
         <a
-          className="flex items-center gap-2 px-2 py-2 bg-white text-gray-700 border rounded-full shadow-md hover:bg-gray-100 transition"
+          className="text-gray-700 hover:text-gray-800 transition"
           href="https://www.linkedin.com/in/ayushvidhale/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <BsLinkedin className="text-xl md:text-2xl" />
+          <BsLinkedin className="text-2xl md:text-3xl" />
         </a>
 
         <a
-          className="flex items-center gap-2 px-2 py-2 bg-white text-gray-700 border rounded-full shadow-md hover:bg-gray-100 transition"
+          className="text-gray-700 hover:text-gray-800 transition"
           href="https://github.com/ayushvidhale"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaGithubSquare className="text-xl md:text-3xl" />
+          <FaGithubSquare className="text-2xl md:text-3xl" />
         </a>
 
         <a
-          className="flex items-center gap-2 px-2 py-2 bg-white text-gray-700 border rounded-full shadow-md hover:bg-gray-100 transition"
+          className="text-gray-700 hover:text-gray-800 transition"
           href="https://x.com/ayushvidh"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaTwitterSquare className="text-xl md:text-3xl" />
+          <FaTwitterSquare className="text-2xl md:text-3xl" />
         </a>
       </motion.div>
     </section>

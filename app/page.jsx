@@ -22,7 +22,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex flex-col items-start px-4">
+    <main className="flex flex-col items-start md:px-4 px-2">
       {/* <Intro /> */}
       {/* <About /> */}
       {/* <SectionDivider /> */}
