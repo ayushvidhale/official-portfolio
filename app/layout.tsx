@@ -25,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="!scroll-smooth">
-      <body className={`${inter.className} bg-[#e8e4e4] text-gray-950 pt-14`}>
+      <body className={`${inter.className} bg-[#f9f5fc] text-gray-950 pt-14`}>
         <NextUIWrapper>
           <ActiveSectionContextProvider>
             {/* <Header /> */}
