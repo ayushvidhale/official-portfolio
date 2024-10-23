@@ -7,7 +7,7 @@ import Project from "./project";
 import { useSectionInView } from "@/lib/hooks";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-export default function Projects() {
+export default function Hackathons() {
   const { ref } = useSectionInView("Projects", 0.5);
 
   return (
@@ -39,7 +39,7 @@ export default function Projects() {
                   src="https://heyrocket.in/assets/images/favicon.ico"
                 />
                 <div className="flex justify-between w-full">
-                  <h1 className="md:text-lg text-base text-gray-800 font-semibold ">
+                  <h1 className="md:text-lg text-base text-gray-700 font-semibold ">
                     {" "}
                     HeyRocket
                   </h1>
@@ -48,14 +48,13 @@ export default function Projects() {
                   </span>
                 </div>
               </div>
-              <p className="md:text-sm text-[12px] text-gray-800">
+              <p className="md:text-sm text-[12px] text-gray-700">
                 {" "}
                 Ready for Rocket Speed Deliveries
               </p>
             </div>
           </a>
         </motion.div>
-        {/* <div /> */}
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: 100 }}
@@ -77,7 +76,7 @@ export default function Projects() {
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi-NCONl9jSvVEtzY1sHVexfLgIEsKXs6umg&s"
                 />
                 <div className="flex justify-between w-full">
-                  <h1 className="md:text-lg text-base text-gray-800 font-semibold ">
+                  <h1 className="md:text-lg text-base text-gray-700 font-semibold ">
                     {" "}
                     WindCraftUI
                   </h1>
@@ -86,7 +85,7 @@ export default function Projects() {
                   </span>
                 </div>
               </div>
-              <p className="md:text-sm text-[12px] text-gray-800">
+              <p className="md:text-sm text-[12px] text-gray-700">
                 {" "}
                 Beautifully crafted Tailwind CSS components, ready for your next
                 project
@@ -116,7 +115,7 @@ export default function Projects() {
                   src="./quizmasterai.png"
                 />
                 <div className="flex justify-between w-full">
-                  <h1 className="md:text-lg text-base text-gray-800 font-semibold ">
+                  <h1 className="md:text-lg text-base text-gray-700 font-semibold ">
                     {" "}
                     Quiz Master AI
                   </h1>
@@ -125,7 +124,7 @@ export default function Projects() {
                   </span>
                 </div>
               </div>
-              <p className="md:text-sm text-[12px] text-gray-800">
+              <p className="md:text-sm text-[12px] text-gray-700">
                 {" "}
                 Get Job-Ready with AI-Powered Questions
               </p>
@@ -154,7 +153,7 @@ export default function Projects() {
                   src="https://gatiki.club/favicon.ico"
                 />
                 <div className="flex justify-between w-full">
-                  <h1 className="md:text-lg text-base text-gray-800 font-semibold ">
+                  <h1 className="md:text-lg text-base text-gray-700 font-semibold ">
                     {" "}
                     GatiKi Club
                   </h1>
@@ -163,7 +162,7 @@ export default function Projects() {
                   </span>
                 </div>
               </div>
-              <p className="md:text-sm text-[12px] text-gray-800">
+              <p className="md:text-sm text-[12px] text-gray-700">
                 {" "}
                 Source code management tool for startups and open-source
                 community

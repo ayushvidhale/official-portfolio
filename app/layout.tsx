@@ -10,7 +10,7 @@ import Intro from "@/components/intro";
 import ContactButton from "@/components/contact-button";
 import NextUIWrapper from "@/components/NextUI";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Ayush | Personal Portfolio",
@@ -25,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="!scroll-smooth">
-      <body className={`${inter.className} bg-[#f7ecff] text-gray-950 pt-14`}>
+      <body className={` bg-[#f7ecff] text-gray-950 pt-14`}>
         <NextUIWrapper>
           <ActiveSectionContextProvider>
             {/* <Header /> */}
