@@ -59,9 +59,9 @@ export default function Intro() {
             </Link>
             <br />
             <p className="md:pt-4 pt-0 text-xs sm:text-sm md:text-base">
-              Ayush is a software engineer, actively working on SaaS products in
-              industry in <b>Node.js</b> and <b>Next.js</b> environments, and
-              creating <b>scalable</b> tech solutions using technologies like{" "}
+              Ayush is a software engineer, actively working in SaaS industry in{" "}
+              <b>Node.js</b> and <b>Next.js</b> environments, and creating{" "}
+              <b>scalable</b> tech solutions using technologies like{" "}
               <b>
                 <i>Docker, Kubernetes, and Redis.</i>
               </b>
