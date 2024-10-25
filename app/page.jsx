@@ -27,9 +27,9 @@ export default function Home() {
       {/* <About /> */}
       {/* <SectionDivider /> */}
       <Projects />
-      {/* <Skills /> */}
+      <Skills />
       {/* <Experience /> */}
-      {/* <Contact /> */}
+      <Contact />
     </main>
   );
 }

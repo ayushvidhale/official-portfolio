@@ -43,7 +43,7 @@ export const experiencesData = [
     date: "May 2024 - Aug 2024",
   },
   {
-    title: "Software Development Intern",
+    title: "DevOpsDevelopment Intern",
     location: "WaveMaxx",
     description:
       "Collaborated on a real-time data platform supporting 15,000 IoT devices using MQTT and WebSockets. Integrated Google Maps API for device state visualization and developed a super admin panel for device management.",

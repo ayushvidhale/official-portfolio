@@ -68,7 +68,7 @@ export default function Projects() {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://windcraft-production.vercel.app/"
+            href="https://windcraftui.shop/"
           >
             <div className="bg-white hover:bg-gray-100 h-full w-full text-start rounded-xl border border-gray-500 shadow-sm lg:p-6 p-4">
               <div className="flex space-x-4 mb-4">
