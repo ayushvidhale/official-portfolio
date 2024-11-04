@@ -159,7 +159,7 @@ export default function Projects() {
                     GatiKi Club
                   </h1>
                   <span className="inline-flex items-center rounded-full bg-purple-50 px-2 py-1 h-fit md:text-[12px] text-[10px] whitespace-nowrap font-semibold text-purple-700 ring-1 ring-inset ring-purple-600/20">
-                    Building
+                    Seed rounds
                   </span>
                 </div>
               </div>
