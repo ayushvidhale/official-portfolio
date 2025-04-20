@@ -7,107 +7,102 @@ import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
-  // {
-  //   name: "Home",
-  //   hash: "#home",
-  // },
   {
-    name: "Skills",
-    hash: "/#skills",
+    name: "Home",
+    hash: "#home",
   },
   {
-    name: "Experience",
-    hash: "/experience",
+    name: "About",
+    hash: "#about",
   },
   {
     name: "Projects",
-    hash: "/#projects",
+    hash: "#projects",
+  },
+  {
+    name: "Skills",
+    hash: "#skills",
+  },
+  {
+    name: "Experience",
+    hash: "#experience",
   },
   {
     name: "Contact",
-    hash: "/contact",
+    hash: "#contact",
   },
-  // {
-  //   name: "About",
-  //   hash: "#about",
-  // },
 ] as const;
 
 export const experiencesData = [
   {
-    title: "Full-Stack Developer",
-    location: "Shipping Aggregator",
+    title: "Senior Engineer - Supaclear",
+    location: "Remote",
     description:
-      "Joined as a Full-Stack Developer to build a solution using Next.js, Node.js, and Redis. Implemented KYC APIs, tokenized authentication, and task automation with Docker, running on AWS EC2, enhancing platform security and efficiency.",
-    icon: React.createElement(CgWorkAlt),
-    date: "May 2024 - Aug 2024",
+      "Spearheaded development of Synapse using Next.js v15 and FastAPI. Architected and delivered a robust meeting scheduling infrastructure with Getstream SDK and implemented real-time notification systems with Slack webhooks.",
+    icon: React.createElement(FaReact),
+    date: "Nov 2024 - Apr 2025",
   },
   {
-    title: "DevOpsDevelopment Intern",
-    location: "WaveMaxx",
+    title: "Lead Engineer - Heyrocket",
+    location: "Remote",
     description:
-      "Collaborated on a real-time data platform supporting 15,000 IoT devices using MQTT and WebSockets. Integrated Google Maps API for device state visualization and developed a super admin panel for device management.",
-    icon: React.createElement(CgWorkAlt),
-    date: "Jan 2024 - Mar 2024",
+    "Led development of a mission-critical delivery platform processing 2,000+ daily requests. Designed and implemented security architecture with rate limiting, KYC verification, and tokenized authentication to ensure enterprise-grade security.",
+    icon: React.createElement(FaReact),
+    date: "Jan 2024 - Oct 2024",
   },
   {
-    title: "Full-Stack Developer",
-    location: "FindingAlly",
+    title: "Freelance - FindingAlly",
+    location: "Remote",
     description:
-      "Developed a remote study system integrating Jitsi Meet and Alby Chat APIs. Built a room-matching algorithm for connecting users based on shared interests and behavior.",
+      "Architected and implemented a high-precision room-matching algorithm (96% accuracy) and scaled a remote learning platform to handle 5,000+ daily sessions using Jitsi Meet API and Firebase.",
     icon: React.createElement(CgWorkAlt),
-    date: "May 2023 - Aug 2023",
+    date: "May 2023 - Oct 2023",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "WindCraftUI",
+    title: "Buildzero",
     description:
-      "Beautifully crafted UI components, ready for your next projects.",
-    tags: ["Next.js", "MongoDB", "TailwindCSS", "Stripe"],
-    imageUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi-NCONl9jSvVEtzY1sHVexfLgIEsKXs6umg&s",
-    websiteUrl: "https://windcraft-production/vercel.app/",
+      "Co-founded and architected a SaaS startup featuring conversational AI agents. Designed voice recognition algorithms, NLP processing pipelines, and scalable cloud infrastructure supporting 100+ enterprise clients.",
+    tags: ["Next.js", "Voice Agents", "Analytics Integration", "Serverless"],
+    imageUrl: "/images/buildzero.png",
   },
   {
-    title: "GatiKi.Club",
+    title: "Gatiki.club",
     description:
-      "Empowering open-source projects with collaborative tools, issue tracking, and hiring.",
-    tags: ["Next.js", "Firebase", "NextUI", "Razorpay"],
-    imageUrl:
-      "https://yt3.googleusercontent.com/Zu-Q5JdaiT6qM53zk80_15YSXMw5xUqHO2532hbU9WNCx3vIaak0gTg_UW9mcZ77GdAteEyoVg=s900-c-k-c0x00ffffff-no-rj",
-    websiteUrl: "https://gatiki.club/join",
+      "Led technical development of a developer platform with advanced SEO optimization. Implemented dynamic page generation, achieving #1 rank for target keywords. Designed analytics infrastructure that increased user retention by 40%.",
+    tags: ["Next.js", "Technical SEO", "Performance Optimization", "Content Delivery"],
+    imageUrl: "/images/gatiki.png",
   },
-
   // {
-  //   title: "Artos.live",
+  //   title: "Enterprise Meeting Infrastructure",
   //   description:
-  //     "A Web3 project enabling users to create, assign, and monitor webpage walls with MetaMask and Phantom wallet integration.",
-  //   tags: ["React", "Express.js", "MetaMask", "Phantom Wallet"],
-  //   imageUrl: wordanalyticsImg,
+  //     "Architected end-to-end meeting solution handling thousands of concurrent sessions. Designed distributed system with load balancing, failover mechanisms, and real-time webhook integration, reducing system latency by 65%.",
+  //   tags: ["System Architecture", "Real-time Processing", "API Design", "Scaling", "Performance Tuning"],
+  //   imageUrl: "/images/supaclear.png",
   // },
 ] as const;
 
 export const skillsData = [
+  "System Architecture",
+  "Cloud Infrastructure",
+  "API Design",
+  "Scalability",
   "Next.js",
-  "React",
-  "Node.js",
-  "Express.js",
   "TypeScript",
-  "Git",
-  "Redis",
+  "Node.js",
+  "AWS (EC2, Lambda)",
   "Docker",
   "Kubernetes",
-  "TailwindCSS",
-  "Prisma",
   "MongoDB",
-  "MySQL",
-  "Figma",
-  "GraphQL",
-  "Solidity",
-  "Third Web",
-  "AWS EC2",
+  "Redis",
   "Firebase",
-  // "GCP",
+  "CI/CD",
+  "Security Engineering",
+  "GraphQL",
+  "Serverless",
+  "Performance Optimization",
+  "DevOps",
+  "Distributed Systems",
 ] as const;

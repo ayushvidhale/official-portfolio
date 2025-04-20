@@ -1,16 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Syloti+Nagri&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  /* padding: 0;
-  margin: 0; */
-  font-family: "Oxanium", sans-serif;
-  height: 100vh;
-  width: 100vw;
-  overflow-x: hidden;
+html {
+  --line-color: #e5e7eb;
+}
+
+html.dark {
+  --line-color: rgba(255, 255, 255, 0.2);
+}
+
+.borderBlack {
+  @apply border border-black/10;
 }

@@ -4,119 +4,125 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { BsArrowRight, BsLinkedin, BsMedium } from "react-icons/bs";
-import { FaGithubSquare, FaMedium, FaTwitterSquare } from "react-icons/fa";
+import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { HiDownload } from "react-icons/hi";
+import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import {
-  FaLaptopCode,
-  FaProjectDiagram,
-  FaBlog,
-  FaEnvelope,
-  FaPodcast,
-  FaUsers,
-} from "react-icons/fa"; // Import icons from react-icons
-import { TbMessageDots } from "react-icons/tb";
-import { AiOutlineUsergroupAdd } from "react-icons/ai";
 
-// Assuming your project structure is using the public directory to store images
 export default function Intro() {
-  const { ref } = useSectionInView("Skills", 0.5);
+  const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <section
+      ref={ref}
       id="home"
-      className="h-fit text-black text-start sm:mb-0 md:p-6 p-2 rounded-lg"
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
-      <div className="">
-        <motion.div
-          initial={{ opacity: 0, scale: 0 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            type: "tween",
-            duration: 0.2,
-          }}
-        >
-          {/* Assuming the image is placed in the public folder */}
-          <img
-            src="/ayush.jpeg" // Use the correct path based on your image location
-            alt="Ayush's profile"
-            className="w-16 h-16 md:w-32 md:h-32 lg:ms-6 rounded-full object-cover border border-gray-800 shadow-lg"
-          />
-        </motion.div>
-        <div className="flex lg:grid w-full">
-          <motion.h1
-            className="md:pt-4 pt-0  px-2 md:px-4 text-xl sm:text-2xl md:text-3xl lg:text-4xl text-gray-800"
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0 }}
+      <div className="flex items-center justify-center">
+        <div className="relative">
+          <motion.div
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              type: "tween",
+              duration: 0.2,
+            }}
           >
-            <Link
-              href={"/"}
-              className="font-bold hover:underline text-gray-900"
-            >
-              Ayush Vidhale
-            </Link>
-            <br />
-            <p className="md:pt-4 pt-0 text-xs sm:text-sm md:text-base">
-              Ayush is a Software Engineer, actively working in SaaS industry in{" "}
-              <b>Node.js</b> and <b>Next.js</b> environments, and creating{" "}
-              <b>scalable</b> tech solutions using technologies like{" "}
-              <b>
-                <i>Docker, Kubernetes, and Redis.</i>
-              </b>
-            </p>
-          </motion.h1>
+            <Image
+              src="/ayush.jpeg"
+              alt="Ayush portrait"
+              width="192"
+              height="192"
+              quality="95"
+              priority={true}
+              className="h-24 w-24 rounded-full object-cover border-white shadow-xl"
+            />
+          </motion.div>
+
+          <motion.span
+            className="absolute bottom-0 right-0 text-xl"
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              type: "spring",
+              stiffness: 125,
+              delay: 0.1,
+              duration: 0.7,
+            }}
+          >
+            👋
+          </motion.span>
         </div>
       </div>
 
+      <motion.h1
+        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+      >
+        <motion.h1
+          className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+        >
+          <span className="font-bold">Hello, I'm Ayush.</span> A {" "}
+          <span className="font-bold">2x founding engineer</span> with expertise in{" "}
+          <span className="font-bold">product development</span>.
+        </motion.h1>
+      </motion.h1>
+
       <motion.div
-        className="flex justify-between md:pt-8 pt-4 flex-row gap-4 px-2 md:px-4 text-base md:text-lg font-medium"
+        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
           delay: 0.1,
         }}
       >
-        <a
-          className="bg-gray-800 text-white hover:bg-white hover:text-black border border-black transition px-2 py-1 md:px-4 md:py-2 rounded-md text-sm flex items-center"
-          href="https://cal.com/connect-ayush/15min"
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link
+          href="#contact"
+          className="group bg-gray-900 text-white px-5 py-2.5 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          onClick={() => {
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
+          }}
         >
-          <AiOutlineUsergroupAdd className="mr-2" /> Book a Call
+          Contact me here{" "}
+          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+        </Link>
+
+        <a
+          className="group bg-white px-5 py-2.5 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+          href="/SDE_Ayush_Resume.pdf"
+          download
+        >
+          Download CV{" "}
+          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
-        <div className="flex space-x-2">
-          <a
-            className="text-gray-700 hover:text-gray-800 transition"
-            href="https://www.linkedin.com/in/ayushvidhale/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <BsLinkedin className="text-2xl md:text-3xl" />
-          </a>
+        <div className="flex items-center justify-center gap-2 text-lg font-medium">
 
-          <a
-            className="text-gray-700 hover:text-gray-800 transition"
-            href="https://github.com/ayushvidhale"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaGithubSquare className="text-2xl md:text-3xl" />
-          </a>
+        <a
+          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          href="https://www.linkedin.com/in/ayushvidhale/"
+          target="_blank"
+        >
+          <BsLinkedin />
+        </a>
 
-          <a
-            className="text-gray-700 hover:text-gray-800 transition"
-            href="https://x.com/ayushvidh"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaTwitterSquare className="text-2xl md:text-3xl" />
-          </a>
+        <a
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          href="https://github.com/ayushvidhale"
+          target="_blank"
+        >
+          <FaGithubSquare />
+        </a>
+
         </div>
+
       </motion.div>
-      <hr className="block md:hidden w-full border-gray-600 mt-4" />
     </section>
   );
 }

@@ -15,7 +15,7 @@ export default function Contact() {
     <motion.section
       id="contact"
       ref={ref}
-      className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-start"
+      className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
       initial={{
         opacity: 0,
       }}
@@ -31,16 +31,16 @@ export default function Contact() {
     >
       <SectionHeading>Contact me</SectionHeading>
 
-      <p className="text-gray-700 text-sm -mt-6 font-semibold">
-        For project inquiries or collaboration opportunities, feel free to send
-        a message through this form.
-        {/* <a className="underline" href="mailto:example@gmail.com">
-          ayushvidhale099@gmail.com
-        </a>{" "} */}
+      <p className="text-gray-700 -mt-6 dark:text-white/80">
+        Please contact me directly at{" "}
+        <a className="underline underline-offset-2" href="mailto:ayush.sid21@gmail.com">
+        ayush.sid21@gmail.com
+        </a>{" "}
+        or through this form.
       </p>
 
       <form
-        className="mt-10 flex flex-col light:text-black"
+        className="mt-10 flex flex-col dark:text-black"
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);
 
@@ -53,7 +53,7 @@ export default function Contact() {
         }}
       >
         <input
-          className="h-14 px-4 rounded-lg placeholder:text-gray-700 borderBlack light:bg-white light:bg-opacity-80 light:focus:bg-opacity-100 transition-all light:outline-none"
+          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="senderEmail"
           type="email"
           required
@@ -61,7 +61,7 @@ export default function Contact() {
           placeholder="Your email"
         />
         <textarea
-          className="h-52 my-3 rounded-lg placeholder:text-gray-700 borderBlack p-4 light:bg-white light:bg-opacity-80 light:focus:bg-opacity-100 transition-all light:outline-none"
+          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="message"
           placeholder="Your message"
           required
