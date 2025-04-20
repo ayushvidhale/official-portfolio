@@ -15,14 +15,14 @@ export const links = [
     name: "About",
     hash: "#about",
   },
-  {
-    name: "Projects",
-    hash: "#projects",
-  },
-  {
-    name: "Skills",
-    hash: "#skills",
-  },
+  // {
+  //   name: "Projects",
+  //   hash: "#projects",
+  // },
+  // {
+  //   name: "Skills",
+  //   hash: "#skills",
+  // },
   {
     name: "Experience",
     hash: "#experience",
@@ -35,7 +35,7 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Senior Engineer - Supaclear",
+    title: "Founding Engineer - Supaclear",
     location: "Remote",
     description:
       "Spearheaded development of Synapse using Next.js v15 and FastAPI. Architected and delivered a robust meeting scheduling infrastructure with Getstream SDK and implemented real-time notification systems with Slack webhooks.",
@@ -43,7 +43,7 @@ export const experiencesData = [
     date: "Nov 2024 - Apr 2025",
   },
   {
-    title: "Lead Engineer - Heyrocket",
+    title: "Software Engineer - Heyrocket",
     location: "Remote",
     description:
     "Led development of a mission-critical delivery platform processing 2,000+ daily requests. Designed and implemented security architecture with rate limiting, KYC verification, and tokenized authentication to ensure enterprise-grade security.",
@@ -64,7 +64,7 @@ export const projectsData = [
   {
     title: "Buildzero",
     description:
-      "Co-founded and architected a SaaS startup featuring conversational AI agents. Designed voice recognition algorithms, NLP processing pipelines, and scalable cloud infrastructure supporting 100+ enterprise clients.",
+      "Co-founded and shipped a SaaS startup featuring conversational AI agents for outbound calls. Implemented standard product design principals with Nextjs environments.",
     tags: ["Next.js", "Voice Agents", "Analytics Integration", "Serverless"],
     imageUrl: "/images/buildzero.png",
   },
