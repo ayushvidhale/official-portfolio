@@ -37,23 +37,9 @@ export default function Intro() {
               height="192"
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-white shadow-xl"
+              className="h-32 w-32 rounded-full object-cover border border-gray-300"
             />
           </motion.div>
-
-          <motion.span
-            className="absolute bottom-0 right-0 text-xl"
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 125,
-              delay: 0.1,
-              duration: 0.7,
-            }}
-          >
-            👋
-          </motion.span>
         </div>
       </div>
 
@@ -81,25 +67,21 @@ export default function Intro() {
           delay: 0.1,
         }}
       >
-        <Link
-          href="#contact"
+        {/* <a
+          href="mailto:ayush.sid21@gmail.com"
           className="group bg-gray-900 text-white px-5 py-2.5 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
-          onClick={() => {
-            setActiveSection("Contact");
-            setTimeOfLastClick(Date.now());
-          }}
         >
           Contact me here{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
-        </Link>
+        </a> */}
 
         <a
-          className="group bg-white px-5 py-2.5 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+          className="group bg-gray-900 text-white px-5 py-2.5 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
           href="/SDE_Ayush_Resume.pdf"
           download
         >
           Download CV{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+          <HiDownload className="opacity-70 transition" />
         </a>
 
         <div className="flex items-center justify-center gap-2 text-lg font-medium">

@@ -1,10 +1,6 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
   {
@@ -16,21 +12,21 @@ export const links = [
     hash: "#about",
   },
   {
-   name: "Projects",
-  hash: "#projects",
- },
-{
- name: "Skills",
- hash: "#skills",
-},
-  {
     name: "Experience",
     hash: "#experience",
   },
   {
-    name: "Contact",
-    hash: "#contact",
+    name: "Projects",
+    hash: "#projects",
   },
+  {
+    name: "Skills",
+    hash: "#skills",
+  },
+  // {
+  //   name: "Contact",
+  //   hash: "#contact",
+  // },
 ] as const;
 
 export const experiencesData = [
@@ -46,7 +42,7 @@ export const experiencesData = [
     title: "Software Engineer - Heyrocket",
     location: "Remote",
     description:
-    "Led development of a mission-critical delivery platform processing 2,000+ daily requests. Designed and implemented security architecture with rate limiting, KYC verification, and tokenized authentication to ensure enterprise-grade security.",
+      "Led development of a mission-critical delivery platform processing 2,000+ daily requests. Designed and implemented security architecture with rate limiting, KYC verification, and tokenized authentication to ensure enterprise-grade security.",
     icon: React.createElement(FaReact),
     date: "Jan 2024 - Oct 2024",
   },
@@ -72,7 +68,12 @@ export const projectsData = [
     title: "Gatiki.club",
     description:
       "Led technical development of a developer platform with advanced SEO optimization. Implemented dynamic page generation, achieving #1 rank for target keywords. Designed analytics infrastructure that increased user retention by 40%.",
-    tags: ["Next.js", "Technical SEO", "Performance Optimization", "Content Delivery"],
+    tags: [
+      "Next.js",
+      "Technical SEO",
+      "Performance Optimization",
+      "Content Delivery",
+    ],
     imageUrl: "/images/gatiki.png",
   },
   // {
