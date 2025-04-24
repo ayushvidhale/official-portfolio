@@ -34,7 +34,7 @@ export const experiencesData = [
     title: "Founding Engineer - Supaclear",
     location: "Remote",
     description:
-      "Spearheaded development of Synapse using Next.js v15 and FastAPI. Architected and delivered a robust meeting scheduling infrastructure with Getstream SDK and implemented real-time notification systems with Slack webhooks.",
+      "Worked with the founding team for development of Synapse (first product) using Next.js v15 and FastAPI. Architected and delivered a robust meeting scheduling infrastructure with Getstream SDK and built real-time notification systems.",
     icon: React.createElement(FaReact),
     date: "Nov 2024 - Apr 2025",
   },
@@ -42,7 +42,7 @@ export const experiencesData = [
     title: "Software Engineer - Heyrocket",
     location: "Remote",
     description:
-      "Led development of a mission-critical delivery platform processing 2,000+ daily requests. Designed and implemented security architecture with rate limiting, KYC verification, and tokenized authentication to ensure enterprise-grade security.",
+      "Led development of delivery platform processing 2,000+ daily requests. Designed and implemented security architecture with rate limiting, KYC verification, and tokenized authentication to ensure enterprise-grade security.",
     icon: React.createElement(FaReact),
     date: "Jan 2024 - Oct 2024",
   },
@@ -50,7 +50,7 @@ export const experiencesData = [
     title: "Freelance - FindingAlly",
     location: "Remote",
     description:
-      "Architected and implemented a high-precision room-matching algorithm (96% accuracy) and scaled a remote learning platform to handle 5,000+ daily sessions using Jitsi Meet API and Firebase.",
+      "Architected and implemented a high-precision room-matching algorithm and scaled a remote co-learning platform to handle 5,000+ daily sessions using Jitsi Meet API and Firebase.",
     icon: React.createElement(CgWorkAlt),
     date: "May 2023 - Oct 2023",
   },
@@ -61,19 +61,14 @@ export const projectsData = [
     title: "Buildzero",
     description:
       "Co-founded and shipped a SaaS startup featuring conversational AI agents for outbound calls. Implemented standard product design principals with Nextjs environments.",
-    tags: ["Next.js", "Voice Agents", "Analytics Integration", "Serverless"],
+    tags: ["Next.js", "Voice Agents", "Performance Optimization", "Serverless"],
     imageUrl: "/images/buildzero.png",
   },
   {
     title: "Gatiki.club",
     description:
-      "Led technical development of a developer platform with advanced SEO optimization. Implemented dynamic page generation, achieving #1 rank for target keywords. Designed analytics infrastructure that increased user retention by 40%.",
-    tags: [
-      "Next.js",
-      "Technical SEO",
-      "Performance Optimization",
-      "Content Delivery",
-    ],
+      "Led the development of Gatiki, a platform connecting developers with earning opportunities through open source contributions and startup collaborations. Implemented dynamic page generation with advanced SEO optimization, designed analytics infrastructure that increased user engagement.",
+    tags: ["Next.js", "Technical SEO", "Analytics Integration"],
     imageUrl: "/images/gatiki.png",
   },
   // {

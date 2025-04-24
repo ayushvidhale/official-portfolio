@@ -53,9 +53,9 @@ export default function Intro() {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          <span className="font-bold">Hello, I'm Ayush.</span> A {" "}
-          <span className="font-bold">2x founding engineer</span> with expertise in{" "}
-          <span className="font-bold">product development</span>.
+          Hello, I'm <span className="font-bold">Ayush</span>. <br /> 2x{" "}
+          <span className="font-bold"> Founding Engineer</span> specializing in{" "}
+          product development.
         </motion.h1>
       </motion.h1>
 
@@ -67,43 +67,40 @@ export default function Intro() {
           delay: 0.1,
         }}
       >
-        {/* <a
-          href="mailto:ayush.sid21@gmail.com"
+        <a
+          href="https://cal.com/connect-ayush/15min"
           className="group bg-gray-900 text-white px-5 py-2.5 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
         >
-          Contact me here{" "}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
-        </a> */}
+          Book a call
+          {/* <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" /> */}
+        </a>
 
-        <a
+        {/* <a
           className="group bg-gray-900 text-white px-5 py-2.5 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
           href="/SDE_Ayush_Resume.pdf"
           download
         >
           Download CV{" "}
           <HiDownload className="opacity-70 transition" />
-        </a>
+        </a> */}
 
         <div className="flex items-center justify-center gap-2 text-lg font-medium">
+          <a
+            className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            href="https://www.linkedin.com/in/ayushvidhale/"
+            target="_blank"
+          >
+            <BsLinkedin />
+          </a>
 
-        <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://www.linkedin.com/in/ayushvidhale/"
-          target="_blank"
-        >
-          <BsLinkedin />
-        </a>
-
-        <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com/ayushvidhale"
-          target="_blank"
-        >
-          <FaGithubSquare />
-        </a>
-
+          <a
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            href="https://github.com/ayushvidhale"
+            target="_blank"
+          >
+            <FaGithubSquare />
+          </a>
         </div>
-
       </motion.div>
     </section>
   );

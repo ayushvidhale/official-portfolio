@@ -28,12 +28,12 @@ export default function About() {
         <span className="font-medium">
           React, Next.js, Node.js, and MongoDB
         </span>
-        , and I’m experienced with tools like TypeScript, Supabase, Docker, and
-        AWS.
+        , and I’m experienced with tools like Supabase, Docker,
+        AWS and many more.
       </p>
       <br />
       <p className="mb-3">
-        <span className="italic">What drives me</span> is solving meaningful
+        <span className="italic font-medium">What drives me</span> is solving meaningful
         problems, shipping fast, and iterating based on user feedback. Whether
         it’s building AI voice agents, scalable infra, or crafting delightful
         UIs—I thrive in fast-paced, product-focused environments.
